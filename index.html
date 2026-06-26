@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raphael Czar · Dev Portfolio</title>
+  <meta name="description" content="Raphael Czar A. Regis - IT Graduate, Web Developer, and UI/UX Enthusiast. View my projects, skills, and experience." />
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <p>LOADING</p>
+  </div>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo"><span>R</span>egis</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#uiux">UI/UX</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-particles" id="particles"></div>
+      <div class="hero-content glass-card">
+        <div class="hero-avatar" id="avatarTrigger">
+          <img src="images/RaphaelRegis.png" alt="Raphael Czar A. Regis - Click to view" />
+          <div class="view-hint"><i class="fas fa-expand"></i></div>
+        </div>
+        <h1>Raphael Czar A. Regis</h1>
+        <div class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-sub">IT Graduate · Web Developer · UI/UX Enthusiast</p>
+        <div class="hero-buttons">
+          <a href="#hireme" class="btn btn-success"><i class="fas fa-handshake"></i> Hire Me</a>
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#resume" class="btn btn-outline">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVATAR MODAL / LIGHTBOX -->
+    <div class="avatar-modal" id="avatarModal">
+      <div class="avatar-modal-content">
+        <button class="avatar-modal-close" id="avatarModalClose"><i class="fas fa-times"></i></button>
+        <img src="images/RaphaelRegis.png" alt="Raphael Czar A. Regis - Full View" />
+        <div class="modal-name">Raphael Czar A. Regis</div>
+        <div class="modal-title">IT Graduate · Web Developer · UI/UX Enthusiast</div>
+        <span class="modal-badge"><i class="fas fa-check-circle" style="color: #22c55e;"></i> Available for Hire</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="glass-card about-card fade-in">
+          <p>I am an IT graduate with internship experience in web development, IT support, and administrative tasks. During my internships, I developed responsive web pages using HTML5 and CSS3, worked with Git and GitHub for version control, and gained hands-on experience with command-line tools.</p>
+          <p>I also completed an internship where I assisted with accounting and administrative tasks by organizing sales and purchasing records, maintaining business documents, and using Microsoft Excel to support accurate reporting. This experience strengthened my attention to detail and understanding of business operations.</p>
+          <p>My capstone project is a <strong>Point-of-Sale (POS) System for Sip Cafe</strong>, where I focused on creating a practical solution for order processing and sales management.</p>
+          <p>I also developed a <strong>Teachers Portal</strong> with a connected <strong>.NET MAUI Student Portal app</strong> that uses Firebase for real-time notifications — when teachers mark a student absent, the student receives an instant notification on their mobile app.</p>
+          <p>I have a strong interest in <strong>UI/UX design</strong>, focusing on creating clean, intuitive, and user-friendly interfaces that provide an excellent user experience. I enjoy designing layouts that are both visually appealing and functional.</p>
+          <p>I'm passionate about learning new technologies, improving my software development skills, and continuously growing as an IT professional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Programming</h3>
+            <div class="skill-badges">
+              <span class="skill-badge"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+              <span class="skill-badge"><i class="fas fa-code"></i> C#</span>
+              <span class="skill-badge"><i class="fas fa-mobile-alt"></i> .NET MAUI</span>
+              <span class="skill-badge"><i class="fas fa-fire"></i> Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <div class="skill-badges">
+              <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-badge"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-badge"><i class="fas fa-code"></i> VS</span>
+              <span class="skill-badge"><i class="fas fa-code"></i> VS Code</span>
+              <span class="skill-badge"><i class="fas fa-file-excel"></i> Excel</span>
+              <span class="skill-badge"><i class="fas fa-database"></i> MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-user"></i> Other</h3>
+            <div class="skill-badges">
+              <span class="skill-badge"><i class="fas fa-pencil-ruler"></i> UI/UX Design</span>
+              <span class="skill-badge"><i class="fas fa-mobile-alt"></i> Responsive Web</span>
+              <span class="skill-badge"><i class="fas fa-wrench"></i> Troubleshooting</span>
+              <span class="skill-badge"><i class="fas fa-headset"></i> Technical Support</span>
+              <span class="skill-badge"><i class="fas fa-cloud"></i> Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1: Sip Cafe POS -->
+          <div class="glass-card project-card fade-in">
+            <div class="project-gallery">
+              <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                  <img src="images/Login.png" alt="Login Page" />
+                  <img src="images/OrderPage.png" alt="Order Page" />
+                  <img src="images/ViewOrder.png" alt="View Order" />
+                  <img src="images/MenuPage.png" alt="Menu Page" />
+                  <img src="images/ReportPage.png" alt="Reports Page" />
+                  <img src="images/EmployeeView.png" alt="Employee View" />
+                  <img src="images/NotificationPage.png" alt="Notifications" />
+                  <img src="images/UserManagement.png" alt="User Management" />
+                  <img src="images/UserProfile.png" alt="User Profile" />
+                </div>
+                <button class="slider-btn prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-label" id="sliderLabel">Login Page</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Sip Cafe POS System</h3>
+              <p>A Point-of-Sale System developed as a capstone project for a café. Streamlines customer ordering, order tracking, and sales reporting with a user-friendly interface.</p>
+              <div class="project-features">
+                <span><i class="fas fa-lock"></i> Secure Login</span>
+                <span><i class="fas fa-chart-pie"></i> Dashboard</span>
+                <span><i class="fas fa-shopping-cart"></i> POS Ordering</span>
+                <span><i class="fas fa-file-alt"></i> Sales Reports</span>
+                <span><i class="fas fa-users"></i> Employee Management</span>
+              </div>
+              <div class="tech-badges">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+                <span>C#</span><span>.NET MAUI</span><span>MySQL</span>
+                <span>Git</span><span>GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Teachers Portal + Student App -->
+          <div class="glass-card project-card fade-in">
+            <div class="project-info">
+              <h3>Teachers Portal & Student App</h3>
+              <p>A complete attendance management system with a web-based Teachers Portal and a .NET MAUI Student App. Teachers can mark attendance, and students receive real-time notifications via Firebase.</p>
+              <div class="project-features">
+                <span><i class="fas fa-chalkboard-teacher"></i> Teacher Dashboard</span>
+                <span><i class="fas fa-user-graduate"></i> Student App</span>
+                <span><i class="fas fa-bell"></i> Real-time Notifications</span>
+                <span><i class="fas fa-fire"></i> Firebase Integration</span>
+                <span><i class="fas fa-check-circle"></i> Attendance Tracking</span>
+              </div>
+              <div class="tech-badges">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+                <span>C#</span><span>.NET MAUI</span><span>Firebase</span>
+                <span>Firestore</span><span>GitHub</span>
+              </div>
+              <div class="project-links">
+                <a href="https://raffire687.github.io/" target="_blank" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="https://github.com/Raffire687" target="_blank" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Internship Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2025</span>
+              <h3>CTC BPO Inc.</h3>
+              <h4>Web Development Intern</h4>
+              <ul>
+                <li>Developed responsive web pages using HTML5, CSS3, and JavaScript</li>
+                <li>Used Git and GitHub for version control and collaboration</li>
+                <li>Maintained websites and performed debugging and testing</li>
+                <li>Assisted in improving website performance and user experience</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2026</span>
+              <h3>Sebuana Global Food Corp.</h3>
+              <h4>IT / Accounting Support</h4>
+              <ul>
+                <li>Organized sales and purchasing records with attention to detail</li>
+                <li>Created Excel reports and maintained accurate documentation</li>
+                <li>Assisted with administrative tasks and business document management</li>
+                <li>Supported IT-related tasks and troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI/UX -->
+    <section id="uiux" class="section">
+      <div class="container">
+        <h2 class="section-title">UI/UX Showcase</h2>
+        <div class="uiux-grid">
+          <div class="uiux-card glass-card fade-in">
+            <img src="images/Login.png" alt="Login Screen" />
+            <p>Login Screen</p>
+          </div>
+          <div class="uiux-card glass-card fade-in">
+            <img src="images/OrderPage.png" alt="Order Page" />
+            <p>Order Page</p>
+          </div>
+          <div class="uiux-card glass-card fade-in">
+            <img src="images/MenuPage.png" alt="Menu Page" />
+            <p>Menu Page</p>
+          </div>
+          <div class="uiux-card glass-card fade-in">
+            <img src="images/ReportPage.png" alt="Reports Page" />
+            <p>Reports Page</p>
+          </div>
+          <div class="uiux-card glass-card fade-in">
+            <img src="images/EmployeeView.png" alt="Employee View" />
+            <p>Employee View</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIRE ME / CTA SECTION -->
+    <section id="hireme" class="section">
+      <div class="container">
+        <div class="cta-section fade-in">
+          <div class="cta-badge">
+            <i class="fas fa-check-circle"></i> Available for Hire
+          </div>
+          <h2><i class="fas fa-handshake"></i> Let's Work Together</h2>
+          <p>I'm an IT graduate with practical experience in web development, UI/UX design, and mobile app development. I'm passionate about building clean, functional, and user-friendly applications. Looking for opportunities where I can contribute and grow as a developer.</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-success"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="files/RESUMEGRADUATE.pdf" target="_blank" class="btn btn-primary">
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="https://github.com/Raffire687" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+          <p style="margin-top: 1.5rem; color: #64748b; font-size: 0.85rem;">
+            <i class="fas fa-map-pin" style="color: #3B82F6;"></i> Open to remote and on-site opportunities
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="glass-card resume-card fade-in">
+          <i class="fas fa-file-pdf resume-icon"></i>
+          <h3>Raphael Czar A. Regis</h3>
+          <p>Download my full resume to see my complete experience, skills, and achievements.</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="files/RESUMEGRADUATE.pdf" target="_blank" class="btn btn-primary">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+            <button class="btn btn-outline" id="viewResumeBtn2">
+              <i class="fas fa-eye"></i> View Online
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="glass-card contact-card fade-in">
+            <h3>Get in Touch</h3>
+            <p><span class="availability"><i class="fas fa-clock"></i> Available Now</span></p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <span class="email-wrapper">
+                <a href="mailto:raphaelregis.work@gmail.com">raphaelregis.work@gmail.com</a>
+                <button class="btn-copy" id="copyEmailBtn" title="Copy email to clipboard">
+                  <i class="fas fa-copy"></i> Copy
+                </button>
+              </span>
+            </p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/raphael-czar-a-regis-60007a41a/" target="_blank">linkedin.com/in/raphael-czar</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Raffire687" target="_blank">github.com/Raffire687</a></p>
+            <p><i class="fab fa-upwork"></i> <a href="https://www.upwork.com/freelancers/~01604976325ab01787" target="_blank">upwork.com/raphael</a></p>
+          </div>
+          <div class="glass-card contact-card fade-in">
+            <h3>Quick Links</h3>
+            <p><i class="fas fa-handshake"></i> <a href="#hireme">Hire Me</a></p>
+            <p><i class="fas fa-folder-open"></i> <a href="#projects">View Projects</a></p>
+            <p><i class="fas fa-file-pdf"></i> <a href="files/RESUMEGRADUATE.pdf" target="_blank">Download Resume</a></p>
+            <p><i class="fas fa-user"></i> <a href="#about">About Me</a></p>
+            <p><i class="fas fa-code"></i> <a href="https://github.com/Raffire687" target="_blank">GitHub Repositories</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Raphael Czar A. Regis</p>
+      <p>Designed &amp; Developed with <i class="fas fa-heart" style="color: #3B82F6;"></i> by Raphael Czar A. Regis</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- External JavaScript -->
+  <script src="portfolio.js"></script>
+</body>
+</html>
